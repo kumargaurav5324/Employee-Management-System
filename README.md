@@ -8,31 +8,6 @@ CRUD Operations: Add, update, delete, and view employee records
 
 Persistent Storage: MySQL or SQLite integration via JDBC
 
-Modular Architecture: MVC structure for clean separation
-
-CI/CD Ready: GitHub Actions setup for build and test
-
-Quick Start
-Installation
-bash
-Copy
-Edit
-git clone https://github.com/your/employee-management-system.git  
-cd employee-management-system  
-Prerequisites
-Java 17+
-
-Maven
-
-MySQL or SQLite (optional; SQLite is bundled)
-
-Usage
-CLI Launcher (for headless mode or quick testing)
-bash
-Copy
-Edit
-# Launch with default config
-java -jar target/ems.jar
 
 # Launch with a custom database config
 java -jar target/ems.jar --db-url jdbc:mysql://localhost:3306/ems --db-user root --db-pass pass123
@@ -40,10 +15,12 @@ GUI Mode
 bash
 Copy
 Edit
+
 # Compile and run
 mvn compile exec:java -Dexec.mainClass="com.ems.Main"
 Output Format
-Example Employee JSON export:
+
+# Example Employee JSON export:
 
 json
 Copy
@@ -55,7 +32,9 @@ Edit
   "designation": "Manager",
   "salary": 95000
 }
-Project Structure
+
+
+# Project Structure
 bash
 Copy
 Edit
@@ -84,6 +63,8 @@ Development
 bash
 Copy
 Edit
+
+
 # Run all tests
 mvn test
 
